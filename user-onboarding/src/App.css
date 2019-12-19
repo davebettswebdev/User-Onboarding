@@ -1,27 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap');
+
 .App {
   text-align: center;
+  background-image: url(./components/images/background.jpg);
+  height: 100vh;
+  padding: 20% 0 0 65%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 0;
+  font-family: 'Vollkorn SC', serif;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
