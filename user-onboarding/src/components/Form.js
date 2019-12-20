@@ -18,12 +18,11 @@ function UserForm({ values, errors, touched, status }) {
         <Field className='input' type='text' name='username' placeholder='Wiseguy Name'/>
         {touched.username && errors.username && (<p>Hey genius, what's your name?</p>)}
         <Field className='input' type='email' name='email' placeholder='Email'/>
-        {touched.email && errors.email && (<p>Please Enter a Valid Email</p>) || values.email === 'waffle@syrup.com' && (<p>Try again...</p>)}
+        {touched.email && errors.email && (<p>Try again...</p>) || values.email === 'waffle@syrup.com' && (<p>Try again...</p>)}
         <Field className='input' type='password' name='password' placeholder='Password'/>
-        {touched.password && errors.password && (<p>Please Enter a Password</p>)}
+        {touched.password && errors.password && (<p>This is your password, you can't forget about it!</p>)}
         <label>
-          <Field className='check-box' type='checkbox' name='terms' checked={values.terms}/>
-          <p>Please Review and Agree to the <a href="https://www.wiseguypizza.com/terms-and-conditions" target="_blank">blood oath..</a> Once you're in, there's no backing out</p>
+          <p><Field className='check-box' type='checkbox' name='terms' checked={values.terms}/>Please Review and Agree to the <a href="https://www.wiseguypizza.com/terms-and-conditions" target="_blank">blood oath.</a> Once you're in, there's no backing out</p>
           {touched.terms && errors.terms && (<p>You MUST Review and Agree to the Terms of Service</p>)}
         </label>
         <button>Submit</button>
